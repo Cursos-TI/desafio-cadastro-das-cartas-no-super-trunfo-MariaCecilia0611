@@ -11,15 +11,15 @@ int main() {
 
     // Solicita ao usuário que digite o nome do estado e armazena na variável 'estado'
     printf("Digite aqui o nome do Estado: \n"); 
-    scanf("%s", estado);
+    fgets(estado, sizeof(estado), stdin);
 
     // Solicita ao usuário que digite o código da carta e armazena na variável 'codigo'
     printf("Digite aqui o código da carta: \n");
-    scanf("%s", codigo);
+    fgets(codigo, sizeof(codigo), stdin);
 
     // Solicita ao usuário que digite o nome da cidade e armazena na variável 'cidade'
     printf("Digite aqui a Cidade: \n");
-    scanf("%s", cidade);
+    fgets(cidade, sizeof(cidade), stdin);
 
     // Solicita ao usuário que digite a população e armazena na variável 'populacao'
     printf("Digite aqui a População: \n");
@@ -41,13 +41,13 @@ int main() {
     printf("\nDADOS COLETADOS\n");
 
     // Exibe o nome do estado informado pelo usuário
-    printf("Estado: %s\n", estado);
+    printf("Estado: %s", estado);
     
     // Exibe o código da carta informado pelo usuário
-    printf("Código da carta: %s\n", codigo);
+    printf("Código da carta: %s", codigo);
     
     // Exibe o nome da cidade informado pelo usuário
-    printf("Cidade: %s\n", cidade);
+    printf("Cidade: %s", cidade);
     
     // Exibe o número da população informado pelo usuário
     printf("População: %d\n", populacao);
@@ -62,5 +62,4 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", turisticos);
 
     return 0; // Indica que o programa foi executado com sucesso
-
 }
